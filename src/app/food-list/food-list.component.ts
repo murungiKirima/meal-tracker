@@ -2,6 +2,8 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Food } from '../food.model';
 
+import {}
+
 @Component({
   selector: 'app-food-list',
   templateUrl: './food-list.component.html',

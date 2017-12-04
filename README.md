@@ -22,6 +22,15 @@ The application is bug free but feel free send an email once you encounter some 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.2, typescript, HTML, CSS
 
+## Set Up and installation requirements.
+
+clone repository.
+Install Angular cli.
+Run nmp install.
+Install globals e.g. Typescript packages and typescript.
+npm install typescript -g
+apm install atom-typescript
+
 ## Support and contact details
 
 The application is almost bug free so far but if you may run into any problems please feel free to contact me on via my email; murungikirima@gmail.com with all your queries and I will be sure to get back to you within the shortest time.

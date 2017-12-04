@@ -2,40 +2,22 @@
 <div style="text-align:center">
   <form>
     <input placeholder="food name" #newName>
-    <input type="button" >
+    <!-- <input type="button" > -->
   </form>
   <br>
   <form>
     <input placeholder="calories" #newCalories>
-    <input type="button" >
+    <!-- <input type="button" > -->
   </form>
   <br>
   <form>
-    <!-- <input placeholder="calories" > -->
-    <input type="button" >
-    <!-- <form class="" action="index.html" method="post"> -->
-    <!-- <input type="text" name="description" placeholder="description"> -->
-    <!-- <input  type="button" value="Add" onClick=""> -->
-    <textarea rows="4" cols="29" placeholder="description" #newDescription>
+    <textarea rows="4" cols="20" placeholder="description" #newDescription>
     </textarea>
   </form>
 </div>
   <br>
-  <!-- <h2>Add you food details here.</h2>
-  <div>
-  <label>Food Name</label>
-  <input #newName>
-  </div>
-  <div>
-  <label>Food Description</label>
-  <input #newDescription>
-  </div>
-  <div>
-  <label>Food Calories</label>
-  <input #newCalories>
-  </div> -->
 <button (click)=
-"addClicked(newName.value,newDescription.value,newCalories.value);
+"addClicked(newCalories.value,newDescription.value,newName.value);
 newName.value='';
 newCalories.value='';
 newDescription.value='';

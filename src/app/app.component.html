@@ -14,21 +14,25 @@
 <!-- <app-food-form (newFoodSender)="addFood($event)">
 </app-food-form> -->
 <main>
-  <div class="row">
-    <div class="column left">
-      <app-food-form
-        (newFoodSender)="addFood($event)"
-      ></app-food-form>
-    </div>
-    <div class="column right">
-      <app-food-list
-      [childFoodList]="masterFoodList"
-      (clickSender)="showDetails($event)"
-      ></app-food-list>
-      <app-edit-food
-        [childSelectedFood]="selectedFood"
-        (doneClickedSender)="finishedEditing()"
-      ></app-edit-food>
+  <div class="jumbotron">
+    <div style="text-align:center">
+      <div class="row">
+        <div class="column left">
+          <app-food-form
+            (newFoodSender)="addFood($event)"
+          ></app-food-form>
+        </div>
+        <div class="column right">
+          <app-food-list
+          [childFoodList]="masterFoodList"
+          (clickSender)="showDetails($event)"
+          ></app-food-list>
+          <app-edit-food
+            [childSelectedFood]="selectedFood"
+            (doneClickedSender)="finishedEditing()"
+          ></app-edit-food>
+        </div>
+      </div>
     </div>
   </div>
 </main>
