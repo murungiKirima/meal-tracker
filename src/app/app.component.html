@@ -1,4 +1,5 @@
 <!--Start of header-->
+<div class="container">
 <div class="jumbotron">
   <div style="text-align:center">
     <h1>
@@ -10,30 +11,26 @@
 </div>
 <!--End of header-->
 <!--Start of body-->
-<div class="jumbotron 2">
-  <div style="text-align:center">
-    <form class="" action="index.html" method="post">
-      <input type="text" name="food name" placeholder="food name">
-      <input  type="button" value="Add" onClick="">
-    </form>
-    <br>
-    <form class="" action="index.html" method="post">
-      <input type="text" name="calories" placeholder="calories">
-      <input type="button" value="Add" onClick="">
-    </form>
-    <br>
-    <form class="" action="index.html" method="post">
-     <!-- <input type="text" name="description" placeholder="description"> -->
-     <!-- <input  type="button" value="Add" onClick=""> -->
-    <textarea rows="4" cols="29" placeholder="description">
-    </textarea>
-
-    </form>
-    <br>
-     <input  type="button" value="Save" onClick="">
+<!-- <app-food-form (newFoodSender)="addFood($event)">
+</app-food-form> -->
+<main>
+  <div class="row">
+    <div class="column left">
+      <app-food-form
+        (newFoodSender)="addFood($event)"
+      ></app-food-form>
+    </div>
+    <div class="column right">
+      <app-food-list
+      [childFoodList]="masterFoodList"
+      (clickSender)="showDetails($event)"
+      ></app-food-list>
+      <app-edit-food
+        [childSelectedFood]="selectedFood"
+        (doneClickedSender)="finishedEditing()"
+      ></app-edit-food>
+    </div>
   </div>
-</div>
+</main>
 <!--End of body-->
-<div class="jumbotron">
-
 </div>

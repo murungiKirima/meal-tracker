@@ -1,0 +1,12 @@
+<h1></h1>
+<select>
+
+</select>
+
+<div *ngFor="let currentFood of childFoodList | calories: selectedCalorieCount">
+
+  <p>Name: {{currentFood.name}}</p>
+  <p>Calories: {{currentFood.calories}}</p>
+  <p>Description: {{currentFood.description}}</p>
+  <button (click)="editButtonClicked(currentFood)">Edit</button>
+</div>
