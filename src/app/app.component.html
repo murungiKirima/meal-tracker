@@ -11,8 +11,6 @@
 </div>
 <!--End of header-->
 <!--Start of body-->
-<!-- <app-food-form (newFoodSender)="addFood($event)">
-</app-food-form> -->
 <main>
   <div class="jumbotron">
     <div style="text-align:center">
@@ -26,6 +24,7 @@
           <app-food-list
           [childFoodList]="masterFoodList"
           (clickSender)="showDetails($event)"
+          (deleteFood)="delete($event)"
           ></app-food-list>
           <app-edit-food
             [childSelectedFood]="selectedFood"

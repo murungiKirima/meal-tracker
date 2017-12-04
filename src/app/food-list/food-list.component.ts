@@ -2,7 +2,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Food } from '../food.model';
 
-import {}
 
 @Component({
   selector: 'app-food-list',
@@ -15,7 +14,10 @@ export class FoodListComponent implements OnInit {
   editButtonClicked(foodToEdit: Food) {
     this.clickSender.emit(foodToEdit);
   }
-
+  @Output() deleteFood = new EventEmitter();
+ deleteFoodItem(foodToDelete: Food) {
+   this.deleteFood.emit(foodToDelete);
+ }
   public selectedCalorieCount: string = "all";
   onChange(optionFromMenu) {
     this.selectedCalorieCount = optionFromMenu;
