@@ -31,6 +31,9 @@ Install globals e.g. Typescript packages and typescript.
 npm install typescript -g
 apm install atom-typescript
 
+## Development server
+
+Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 ## Support and contact details
 
 The application is almost bug free so far but if you may run into any problems please feel free to contact me on via my email; murungikirima@gmail.com with all your queries and I will be sure to get back to you within the shortest time.
